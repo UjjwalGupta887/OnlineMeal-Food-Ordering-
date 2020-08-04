@@ -1,0 +1,215 @@
+html {
+    scroll-behavior:smooth;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.navbar {
+    display: flex;
+    position: sticky;
+    top: 0px;
+    margin: 0px 4px;
+    width: 100%;
+    background-color: lightslategray;
+    height: 60px;
+}
+
+.navbar img {
+    height: 50px;
+    width: 80px;
+    border-radius: 3px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li {
+    list-style: none;
+    margin: 15px 15px;
+}
+
+.navbar ul li a {
+    margin: 5px;
+    justify-content: center;
+    font-size: 21px;
+    color: black;
+    text-decoration: none;
+}
+
+.navbar ul li a:hover {
+    background-color: black;
+    color: white;
+    text-decoration: underline;
+    border-radius: 5px;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background: url(../static/img/bg.jpg) no-repeat center center/cover;
+    height: 642px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+#home h1 {
+    font-size: 2rem;
+    font-family: cursive;
+}
+
+#home p {
+    font-size: 1.5rem;
+    font-family: sans-serif;
+}
+
+.btn {
+    font-family: cursive;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 5px 250px;
+    width: 100px
+}
+
+.btn:hover {
+    color: white;
+    background-color: black;
+
+}
+
+.heading {
+    font-size: 29px;
+    text-align: center;
+    margin: 40px;
+}
+.heading h2 {
+    color: white;
+    font-size: 45px;
+    text-align: center;
+    margin: 70px;
+}
+.heading h3 {
+    font-size: 45px;
+    text-align: center;
+}
+
+#services {
+    font-size: 1.3rem;
+    margin: 5px 190px;
+
+}
+.flex{
+    display: flex;
+}
+
+.item {
+    width: 300px;
+    height: 320px;
+    background-color: lightgrey;
+    border: 3px solid red;
+    padding: 30px 40px;
+    margin: 5px 10px;
+    border-radius: 20px;
+}
+
+.item h1{
+    text-align: center;
+}
+
+.item img {
+    margin: 10px;
+    width: 220px;
+}
+
+
+#client::before{
+   
+    position: absolute;
+    content: "";
+    background: url(../static/img/bg1.jpg) center center/cover;
+    width: 100%;
+    height: 300px;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+.item-1  {
+    width: 150px;
+    margin: 0px 100px;
+    
+}
+.item-1 img{
+height: 150px;
+width: 150px;
+}
+
+
+#contact {
+    display: block;
+    margin: 0px auto;
+    height: 300px;
+    width: 500px;
+    text-align: center;
+}
+
+ input {
+     border: 3px solid black;
+    width: 360px;
+    margin: 3px;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    font-family: cursive;
+}
+
+ textarea {
+     height: 50px;
+    width: 370px;
+    margin: 3px;
+    border-radius: 10px;
+    padding: 10px;
+    border: 3px solid black;
+    text-align: center;
+    font-family: cursive;
+}
+
+.btn-1 {
+    font-size: 17px;
+    display: block;
+    margin: 0px auto;
+    width: 100px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: cursive;
+}
+
+.btn-1:hover {
+    color: white;
+    background-color: black;
+}
+
+.copy{
+    color: white;
+    font-family: cursive;
+    background-color: black;
+    text-align: center;
+    margin: 15px;
+}

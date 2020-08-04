@@ -1,0 +1,48 @@
+@media screen and (max-width:1305px){
+   
+   .navbar{
+   flex-direction: column;
+   text-align: center;
+   }
+   .navbar img{
+      display: none;
+   }
+   .navbar ul li a{
+      margin: 0px 0px;
+   }
+
+
+
+/* services cards */
+   #services .flex{
+      flex-direction: column;
+   }
+   .item {
+      margin: -14px -69px;
+   }
+
+/* client logo */
+   #client .flex{
+   flex-wrap: wrap;
+   }
+
+   .item-1 {
+      width: 0px;
+      margin: 0px 65px;
+   }
+
+   .item-1 img {
+      height: 73px;
+      width: 73px;
+   }
+/* contact*/
+#contact {
+   margin: -25px auto;
+   padding: 10px;
+}
+
+.heading h3{
+   margin: 40px;
+}
+
+}

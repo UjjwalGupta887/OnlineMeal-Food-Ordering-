@@ -1,0 +1,70 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title OnlineMeal.comn
+    style
+        include ../static/index.css
+        include ../static/responsive.css
+  body
+    nav.navbar
+      img(src='static/img/frontlogo.jpg', alt='OnlineMeal')
+      ul
+        li
+          a(href='/') Home
+        li
+          a(href='#services') Services
+        li
+          a(href='#client') Our Clients
+        li
+          a(href='#contact') Contact Us
+    section#home
+      h1 Welcome to the OnlineMeal
+      p
+        | Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae itaque laboriosam beatae obcaecati
+        | | aliquam, minima veniam pariatur, dolorum eligendi harum distinctio fugiat tque officiis in dolore.
+      button.btn Order Now
+    section#services
+      .heading
+        h1 Our Services
+      .flex
+        .item
+          h1 Food Ordering
+          img(src='static/img/1.png', alt='')
+          p
+            | Lorem ipsum dolor sit, amet consectetur adipisicing elit. In aliquam dolorem ducimus soluta nulla
+            | | possimus, hic alias.
+        .item
+          h1 Bulk Ordering
+          img(src='static/img/2.png', alt='')
+          p
+            | Lorem ipsum dolor sit, amet coalias, repudiandae qui cupiditate eius dolore rem impedit.
+        .item
+          h1 Food Delivery
+          img(src='static/img/3.png', alt='')
+          p
+            | Lorem ipsum dolor sit, amet consectetur adipisicing elit. In aliquam dolorem ducimus soluta nul.
+    section#client
+      .heading
+        h2 Our Clients
+      .flex
+        .item-1
+          img(src='static/img/logo1.png', alt='Clients')
+        .item-1
+          img(src='static/img/logo2.png', alt='')
+        .item-1
+          img(src='static/img/logo3.png', alt='')
+        .item-1
+          img(src='static/img/logo4.png', alt='')
+    .heading
+      h3 Contact Us
+    section#contact
+      form#contact(action='/', method='POST')
+        input#name(type='text', name='name', placeholder='Enter Your Name')
+        input(type='Email', name='email', id='', placeholder='Enter your Email-Id')
+        input(type='number', name='number', placeholder='Enter your Number')
+        textarea(name='about', cols='30', rows='10', placeholder='Write about us')
+        button.btn-1 Sumbit
+    .copy
+      | Copyright © www.onlinemeal.com. All rights reversed !
